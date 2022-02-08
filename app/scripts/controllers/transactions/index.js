@@ -338,7 +338,7 @@ export default class TransactionController extends EventEmitter {
    * @param {number} txId
    * @returns {TransactionMeta} the txMeta who matches the given id if none found
    * for the network returns undefined
-   */  
+   */
   _getTransaction(txId) {
     const { transactions } = this.store.getState();
     return transactions[txId];
@@ -390,10 +390,13 @@ export default class TransactionController extends EventEmitter {
 
     let txGasFees = {
       txParams: {
-        gasLimit, gasPrice, maxPriorityFeePerGas, maxFeePerGas
+        gasLimit,
+        gasPrice,
+        maxPriorityFeePerGas,
+        maxFeePerGas,
       },
-      estimateUsed
-    };    
+      estimateUsed,
+    };
 
     // only update what is defined
     txGasFees.txParams = pickBy(txGasFees.txParams);
@@ -422,7 +425,7 @@ export default class TransactionController extends EventEmitter {
       return;
     }
 
-    let txEstimateBaseFees = {estimatedBaseFee, decEstimatedBaseFee};
+    let txEstimateBaseFees = { estimatedBaseFee, decEstimatedBaseFee };
     // only update what is defined
     txEstimateBaseFees = pickBy(txEstimateBaseFees);
 
@@ -447,8 +450,8 @@ export default class TransactionController extends EventEmitter {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {
       return;
     }
-    
-    let swapApprovalTransaction = {type, sourceTokenSymbol};
+
+    let swapApprovalTransaction = { type, sourceTokenSymbol };
     // only update what is defined
     swapApprovalTransaction = pickBy(swapApprovalTransaction);
 
@@ -494,7 +497,7 @@ export default class TransactionController extends EventEmitter {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {
       return;
     }
-    
+
     let swapTransaction = {
       sourceTokenSymbol,
       destinationTokenSymbol,
