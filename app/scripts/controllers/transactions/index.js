@@ -468,6 +468,8 @@ export default class TransactionController extends EventEmitter {
    * destinationTokenAddress,
    * swapMetaData,
    * swapTokenValue,
+   * estimatedBaseFee,
+   * approvalTxId
    *}
    * @param swapTransaction.sourceTokenSymbol
    * @param swapTransaction.destinationTokenSymbol
@@ -476,6 +478,8 @@ export default class TransactionController extends EventEmitter {
    * @param swapTransaction.destinationTokenAddress
    * @param swapTransaction.swapMetaData
    * @param swapTransaction.swapTokenValue
+   * @param swapTransaction.estimatedBaseFee
+   * @param swapTransaction.approvalTxId
    */
   updateSwapTransaction(
     txId,
@@ -488,7 +492,7 @@ export default class TransactionController extends EventEmitter {
       swapMetaData,
       swapTokenValue,
       estimatedBaseFee,
-      approvalTxId
+      approvalTxId,
     },
   ) {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {
@@ -504,7 +508,7 @@ export default class TransactionController extends EventEmitter {
       swapMetaData,
       swapTokenValue,
       estimatedBaseFee,
-      approvalTxId
+      approvalTxId,
     };
 
     // only update what is defined
