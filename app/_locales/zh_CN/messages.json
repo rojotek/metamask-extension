@@ -1,36 +1,36 @@
 {
   "QRHardwareInvalidTransactionTitle": {
-    "message": "非法交易"
+    "message": "错误"
   },
   "QRHardwareMismatchedSignId": {
-    "message": "扫描的签名二维码不属于当前交易，请检查交易详情后重试。"
+    "message": "不一致的交易数据。请查看交易详情。"
   },
   "QRHardwarePubkeyAccountOutOfRange": {
-    "message": "暂无更多账户，若想切换到其他账户，请在硬件钱包中选择想要的账户重新同步。"
+    "message": "暂无更多账户。若想访问下方未列出的其他账户，请重新连接您的硬件钱包并选择它。"
   },
   "QRHardwareScanInstructions": {
-    "message": "为了保护您的隐私，屏幕是模糊的，但不影响对二维码的读取。"
+    "message": "将二维码放在摄像头前。屏幕是模糊的，但不影响对二维码的读取。"
   },
   "QRHardwareSignRequestCancel": {
-    "message": "拒绝该交易"
+    "message": "拒绝"
   },
   "QRHardwareSignRequestDescription": {
-    "message": "硬件钱包扫描上方二维码完成签名后，点击“获取签名”按钮扫描已签名的二维码"
+    "message": "使用钱包签名后，点击“获取签名”以接收签名"
   },
   "QRHardwareSignRequestGetSignature": {
     "message": "获取签名"
   },
   "QRHardwareSignRequestSubtitle": {
-    "message": "用硬件钱包扫描二维码"
+    "message": "用您的钱包扫描二维码"
   },
   "QRHardwareSignRequestTitle": {
-    "message": "获取签名"
+    "message": "请求签名"
   },
   "QRHardwareUnknownQRCodeTitle": {
-    "message": "非法二维码"
+    "message": "错误"
   },
   "QRHardwareUnknownWalletQRCode": {
-    "message": "请扫描硬件钱包的同步二维码。"
+    "message": "无效的二维码。请扫描硬件钱包的同步二维码。"
   },
   "QRHardwareWalletImporterTitle": {
     "message": "扫描二维码"
